@@ -1,0 +1,53 @@
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Tri Ân và Kỷ Niệm</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <nav>
+        <a href="/">Trang chủ</a>
+        <a href="/history">Lịch sử và Ý nghĩa</a>
+        <a href="/tributes">Lời tri ân</a>
+        <a href="/teachers">Gương mặt nhà giáo</a>
+        <a href="/activities">Hoạt động chào mừng</a>
+        <a href="/gallery">Thư viện ảnh/video</a>
+    </nav>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Trang Lời Tri Ân và Kỷ Niệm</h1>
+        <p style="text-align: center;">Gửi lời tri ân và chia sẻ kỷ niệm đáng nhớ với thầy cô.</p>
+    </header>
+
+
+    <main>
+        <section id="tribute-form">
+            <h2>Gửi Lời Tri Ân của Bạn</h2>
+            <form onsubmit="addTribute(event)">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+
+                <label for="message">Lời chúc hoặc kỷ niệm:</label>
+                <textarea id="message" name="message" placeholder="Viết lời chúc hoặc kỷ niệm của bạn"
+                    required></textarea>
+
+                <button type="submit">Gửi lời tri ân</button>
+            </form>
+        </section>
+
+    </main>
+     
+    <img src="/static/hello.jpg" width="800" 
+
+    <footer>
+
+        <p style="text-align: center;">Liên hệ: <a href="mailto:info@teachersday.vn">info@teachersday.vn</a></p>
+    </footer>
+</body>
+
+</html>
